@@ -1,0 +1,27 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 22
+    buildToolsVersion "22.0.1"
+
+    defaultConfig {
+        applicationId "cn.cc.sdk.demo"
+        minSdkVersion 15
+        targetSdkVersion 22
+        versionCode 20150723
+        versionName "2.7.23"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile project(':RefreshView')
+    compile project(':ijkmediaplayer')
+    compile project(':CCSDK')
+}

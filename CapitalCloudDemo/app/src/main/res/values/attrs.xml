@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="background_menu_divider" format="reference|color" />
+    <attr name="list_title" format="reference|color" />
+    <attr name="list_subtitle" format="reference|color" />
+</resources>

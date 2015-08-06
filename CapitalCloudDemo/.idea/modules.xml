@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/CCSDK/CCSDK.iml" filepath="$PROJECT_DIR$/CCSDK/CCSDK.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CapitalCloudDemo.iml" filepath="$PROJECT_DIR$/CapitalCloudDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/RefreshView/RefreshView.iml" filepath="$PROJECT_DIR$/RefreshView/RefreshView.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ijkmediaplayer/ijkmediaplayer.iml" filepath="$PROJECT_DIR$/ijkmediaplayer/ijkmediaplayer.iml" />
+    </modules>
+  </component>
+</project>
