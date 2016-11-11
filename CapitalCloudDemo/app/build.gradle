@@ -2,11 +2,10 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 22
-    buildToolsVersion "22.0.1"
-
+    buildToolsVersion "24"
     defaultConfig {
         applicationId "cn.cc.sdk.demo"
-        minSdkVersion 15
+        minSdkVersion 16
         targetSdkVersion 22
         versionCode 20150723
         versionName "2.7.23"
@@ -17,11 +16,24 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    productFlavors {
+    }
+}
+
+allprojects {
+    repositories {
+        jcenter()
+    }
 }
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile fileTree(include: ['*.jar'], dir: 'libs')
     compile project(':RefreshView')
-    compile project(':ijkmediaplayer')
     compile project(':CCSDK')
+    compile "com.android.support:support-v4:22.0.0"
+    compile 'tv.danmaku.ijk.media:ijkplayer-java:0.7.4'
+    compile 'tv.danmaku.ijk.media:ijkplayer-armv7a:0.7.4'
+    compile 'tv.danmaku.ijk.media:ijkplayer-armv5:0.7.4'
+    compile 'tv.danmaku.ijk.media:ijkplayer-x86:0.7.4'
+    compile 'tv.danmaku.ijk.media:ijkplayer-exo:0.7.4'
 }
